@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Roem Ventures - AI Software Development Company",
   description: "Transforming Ideas into Intelligent Software Solutions. We specialize in AI-powered applications and cutting-edge software development.",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/rv_icon.png',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
