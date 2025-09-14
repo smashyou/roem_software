@@ -10,7 +10,7 @@ export default function HeroSection({ onOpenModal }: HeroSectionProps) {
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-8 flex justify-center">
-          <div className="relative h-48 w-[600px]">
+          <div className="relative h-32 w-80 sm:h-40 sm:w-96 md:h-48 md:w-[600px]">
             <Image
               src="/images/logo.png"
               alt="Roem Ventures"

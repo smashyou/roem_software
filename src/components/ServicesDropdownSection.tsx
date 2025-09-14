@@ -370,11 +370,11 @@ export default function ServicesDropdownSection({ onOpenModal }: ServicesDropdow
   const currentService = servicesData[activeService];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Our <span className="text-sky-500">Solutions</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -423,7 +423,7 @@ export default function ServicesDropdownSection({ onOpenModal }: ServicesDropdow
         {/* Service Content */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               {currentService.title}
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -455,8 +455,8 @@ export default function ServicesDropdownSection({ onOpenModal }: ServicesDropdow
         </div>
 
         {/* Key Benefits */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
+        <div className="mb-12 sm:mb-16 md:mb-20">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 sm:mb-12">
             Key Benefits
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

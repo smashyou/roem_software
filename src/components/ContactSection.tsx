@@ -96,10 +96,10 @@ ${formData.message}`;
     }
   };
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Get In <span className="text-sky-500">Touch</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -110,7 +110,7 @@ ${formData.message}`;
 
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">
               Let&apos;s Build Something Amazing Together
             </h3>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -168,7 +168,7 @@ ${formData.message}`;
               </div>
             )}
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     First Name *

@@ -78,10 +78,10 @@ const categoryColors = {
 
 export default function TechStackSection({ onOpenModal }: TechStackSectionProps) {
   return (
-    <section className="py-20 bg-gradient-to-r from-gray-50 to-sky-50 overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-gray-50 to-sky-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Your Tech Stack.{" "}
             <span className="text-sky-500">We Have It Covered.</span>
           </h2>
@@ -114,7 +114,7 @@ export default function TechStackSection({ onOpenModal }: TechStackSectionProps)
         </div>
 
         {/* Category breakdown */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-12 sm:mt-16">
           {Object.entries(categoryColors).map(([category, colorClass]) => (
             <div key={category} className="text-center">
               <div
@@ -130,7 +130,7 @@ export default function TechStackSection({ onOpenModal }: TechStackSectionProps)
           ))}
         </div>
 
-        <div className="text-center mt-16">
+        <div className="text-center mt-12 sm:mt-16">
           <p className="text-gray-600 mb-8">
             Don&apos;t see your preferred technology? We adapt quickly to new tools
             and frameworks.

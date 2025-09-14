@@ -16,7 +16,7 @@ export default function Header({ onOpenModal }: HeaderProps = {}) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="relative h-16 w-64">
+            <div className="relative h-12 w-48 sm:h-14 sm:w-56 md:h-16 md:w-64">
               <Image
                 src="/images/logo.png"
                 alt="Roem Ventures"
