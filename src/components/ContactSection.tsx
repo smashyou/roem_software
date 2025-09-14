@@ -103,7 +103,7 @@ ${formData.message}`;
             Get In <span className="text-sky-500">Touch</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your business with cutting-edge technology? Let's
+            Ready to transform your business with cutting-edge technology? Let&apos;s
             discuss your project.
           </p>
         </div>
@@ -111,11 +111,11 @@ ${formData.message}`;
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8">
-              Let's Build Something Amazing Together
+              Let&apos;s Build Something Amazing Together
             </h3>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Whether you need AI integration, custom software development, or
-              strategic technology consulting, we're here to help bring your
+              strategic technology consulting, we&apos;re here to help bring your
               vision to life.
             </p>
 
@@ -128,7 +128,7 @@ ${formData.message}`;
                   <h4 className="font-semibold text-gray-900 mb-1">Email Us</h4>
                   <p className="text-gray-600">info@roemventures.com</p>
                   <p className="text-sm text-gray-500">
-                    We'll respond within 24 hours
+                    We&apos;ll respond within 24 hours
                   </p>
                 </div>
               </div>

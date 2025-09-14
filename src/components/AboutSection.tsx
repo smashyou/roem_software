@@ -73,7 +73,7 @@ export default function AboutSection({ onOpenModal }: AboutSectionProps) {
             Ready to Transform Your Business?
           </h3>
           <p className="text-xl text-sky-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help you leverage AI and modern technology 
+            Let&apos;s discuss how we can help you leverage AI and modern technology 
             to achieve your business objectives.
           </p>
           <button 

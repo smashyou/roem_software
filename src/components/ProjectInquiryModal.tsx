@@ -166,7 +166,7 @@ export default function ProjectInquiryModal({ isOpen, onClose }: ProjectInquiryM
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
               <p className="text-gray-600 mb-6">
-                Tell us about your project and we'll get back to you with a detailed proposal.
+                Tell us about your project and we&apos;ll get back to you with a detailed proposal.
               </p>
 
               {/* Name and Company Row */}
