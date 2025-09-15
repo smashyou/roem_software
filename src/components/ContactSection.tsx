@@ -55,7 +55,6 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      const name = `${formData.firstName} ${formData.lastName}`.trim();
       const message = `Company: ${formData.company || "Not specified"}
 Project Type: ${formData.projectType || "Not specified"}
 
@@ -68,7 +67,8 @@ ${formData.message}`;
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name,
+          firstName: formData.firstName,
+          lastName: formData.lastName,
           email: formData.email,
           message,
         }),
