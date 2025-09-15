@@ -128,7 +128,14 @@ export default function ProjectInquiryModal({ isOpen, onClose }: ProjectInquiryM
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div 
+      className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          handleClose();
+        }
+      }}
+    >
       <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
@@ -180,7 +187,7 @@ export default function ProjectInquiryModal({ isOpen, onClose }: ProjectInquiryM
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-gray-900 placeholder-gray-500 ${
                       errors.name ? 'border-red-500' : 'border-gray-300'
                     }`}
                     placeholder="John Doe"
@@ -197,7 +204,7 @@ export default function ProjectInquiryModal({ isOpen, onClose }: ProjectInquiryM
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-gray-900 placeholder-gray-500 ${
                       errors.company ? 'border-red-500' : 'border-gray-300'
                     }`}
                     placeholder="Acme Corp"
@@ -217,7 +224,7 @@ export default function ProjectInquiryModal({ isOpen, onClose }: ProjectInquiryM
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-gray-900 placeholder-gray-500 ${
                       errors.email ? 'border-red-500' : 'border-gray-300'
                     }`}
                     placeholder="john@acmecorp.com"
@@ -234,7 +241,7 @@ export default function ProjectInquiryModal({ isOpen, onClose }: ProjectInquiryM
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-gray-900 placeholder-gray-500 ${
                       errors.phone ? 'border-red-500' : 'border-gray-300'
                     }`}
                     placeholder="+1 (555) 123-4567"
@@ -289,7 +296,7 @@ export default function ProjectInquiryModal({ isOpen, onClose }: ProjectInquiryM
                   name="budget"
                   value={formData.budget}
                   onChange={handleInputChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent ${
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-gray-900 ${
                     errors.budget ? 'border-red-500' : 'border-gray-300'
                   }`}
                 >
@@ -313,7 +320,7 @@ export default function ProjectInquiryModal({ isOpen, onClose }: ProjectInquiryM
                   value={formData.projectDetails}
                   onChange={handleInputChange}
                   rows={5}
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent resize-vertical ${
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent resize-vertical text-gray-900 placeholder-gray-500 ${
                     errors.projectDetails ? 'border-red-500' : 'border-gray-300'
                   }`}
                   placeholder="Describe your project requirements, timeline, and any specific technologies you'd like us to use..."
